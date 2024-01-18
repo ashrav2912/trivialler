@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivialler Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 20px;
+}
+
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+fieldset{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+h2{
+    text-align: center;
+    color: orange;
+}
+
+input[type="submit"]{
+    background-color: #4daea1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 25%;
+}
+
+input[type = "submit"]:hover{
+    background-color: #44fca4;
+}
+</style>
+<body>
+    <div class="container">
+    <form action="" method="get">
+        <h1> Trivialler</h1>
+        <h2> Travel made trivial</h2>
+        <hr>
+    <input type="submit" value="About Travallier" formaction="/aboutus">
+    <input type="submit" value="AI Assistant" formaction="/assistant">
+    <input type="submit" value="Forum" formaction="/forum">
+    </form>
+</div>
+</body>
+</html>

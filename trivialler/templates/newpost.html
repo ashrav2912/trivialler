@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+</head>
+<style>
+    *{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 20px;
+}
+
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+fieldset{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+h2{
+    text-align: center;
+    color: orange;
+}
+
+input[type="submit"]{
+    background-color: #4daea1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 25%;
+}
+
+input[type = "submit"]:hover{
+    background-color: #44fca4;
+}
+</style>
+<body>
+    <div class="container">
+        <form action="/posted" method="get">
+            <h1> Add a new Post</h1>
+            <hr>
+        <p>City name: <input type="text" placeholder="city name" name="city_name_forum" required></p>
+        <p>From: <input type="date" name="from_date_forum" required></p>
+        <p>To: <input type="date" name="to_date_forum" required></p>
+        <p>Hotel Name: <input type="text" name="hotel_name_forum" placeholder="hotel name" required></p>
+        <hr>
+        <p>Insert your itinerary here: </p>
+        <br>
+        <textarea name="itinerary_forum" rows="4" cols="50"></textarea>
+        <input type="submit" value="Generate itinerary">
+        </form>
+    </div>
+</body>
+</html>
